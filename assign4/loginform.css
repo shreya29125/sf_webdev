@@ -1,0 +1,77 @@
+@keyframes appearfromtop
+{
+	from {transform:translateY(-100px);}
+	to {transform:translateY(1vw);}
+}
+*
+{
+	box-sizing:border-box;
+}
+body,html
+{
+	height:100%;
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+	font-family:'Varela Round',sans-serif;
+	background-color:moccasin;
+}
+h1
+{
+	font-size:300%;
+	text-align:center;
+	animation-name:appearfromtop;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+	background-color:burlywood;
+}
+.form-container
+{
+	text-align:center;
+}
+p,span
+{
+	color:red;
+	font-size:15px;
+}
+.form
+{
+	width: 400px;
+	height:400px;
+    position: relative;
+    top: 130px;
+    display: inline-block;
+    background-color: #f1f1f1;
+    padding:20px;
+    text-align: left;
+    border-radius: 10px;
+}
+#username,#password
+{
+	border:2px solid #c5c5c5;
+	border-radius:10px;
+	height:32px;
+	width:100%;
+	transition:border 0.5s;
+}
+#username:hover,#password:hover
+{
+	border:2px solid #a5a5a5;
+}
+#login,#signup
+{
+	background-color:red;
+	color:white;
+	height:30px;
+	border:0;
+	width:80px;
+	border-radius:5px;
+	font-size:15px;
+}
+#signup
+{
+	text-decoration:none;
+	display:block;
+	text-align:center;
+	padding:5px;
+}

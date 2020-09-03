@@ -1,0 +1,131 @@
+@keyframes appearfromtop
+{
+	from {transform:translateY(-100px);}
+	to {transform:translateY(1vw);}
+}
+*
+{
+	box-sizing:border-box;
+}
+body,html
+{
+	height:100%;
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+	font-family:'Varela Round',sans-serif;
+	background-color:moccasin;
+}
+h1
+{
+	font-size:300%;
+	text-align:center;
+	background-color:burlywood;
+	margin:0;
+}
+h1>div
+{
+	position:relative;
+	float:right;
+	font-size:50%;
+	font-family:'merriweather',serif;
+}
+.topic
+{
+	margin:20px;
+	clear:both;
+}
+.topic_name
+{
+	background-color:chocolate;
+	height:50px;
+	border-radius:5px;
+	font-size:30px;
+	text-transform: uppercase;
+	padding:5px;
+}
+.content
+{
+	padding:5px;
+	font-size:20px;
+}
+#comments
+{
+	height:480px;
+	overflow:auto;
+}
+.box
+{
+	margin:20px;
+}
+#comment
+{
+	height:40px;
+	width:300px;
+	border:2px solid #c5c5c5;
+	border-radius:10px;
+	transition:border 0.5s;
+}
+#comment:hover
+{
+	border:2px solid #a5a5a5;
+}
+#submit
+{
+	background-color:red;
+	color:white;
+	height:40px;
+	border:0;
+	width:80px;
+	border-radius:5px;
+	font-size:15px;
+	text-align:center;
+	padding:5px;
+}
+.container
+{
+	background-color:white;
+	display:inline-block;
+	border-radius:5px;
+	margin-left:20px;
+	padding:5px;
+	position:relative;
+}
+#edit
+{
+	display:none;
+	position:absolute;
+	top:150px;
+	left:300px;
+	width:400px;
+	height:50px;
+	border:1px solid black;
+	border-radius:5px;
+	background-color:white;
+	text-align:left;
+	padding:10px;
+	z-index:1;
+}
+button
+{
+	display:none;
+	position:absolute;
+	left:110px;
+	border:none;
+}
+.edit
+{
+	top:10px;
+}
+.delete
+{
+	top:30px;
+}
+.edit:hover,.delete:hover
+{
+	border:1px solid #a5a5a5;
+}
+i
+{
+	cursor:pointer;
+}
