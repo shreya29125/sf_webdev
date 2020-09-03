@@ -1,0 +1,113 @@
+*
+{
+	box-sizing:border-box;
+}
+body,html
+{
+	height:100%;
+	margin:0;
+	overflow:hidden;
+}
+.bg
+{
+	height:100%;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	position:relative;
+}
+@media screen and (max-width:600px)
+{
+	.bg
+	{
+		width:100%;
+		height:3000px;
+	}
+}
+@media screen and (max-width:768px)
+{
+	.bg
+	{
+		width:100%;
+		height:2000px;
+	}
+}
+@keyframes appearfromtop
+{
+	from {transform:translateY(-100px);}
+	to {transform:translateY(30px);}
+}
+@keyframes appearfromleft
+{
+	from {transform:translateX(-600px);}
+	to {transform:translateX(10px);}
+}
+@keyframes appearfromright
+{
+	from {transform:translateX(30px);}
+	to {transform:translateX(1600px);}
+}
+@keyframes appearfrombottom
+{
+	from {transform:translateY(30px);}
+	to {transform:translateY(1000px);}
+}
+h1
+{
+	margin:0;
+	font-family:'lobster',cursive;
+	font-size:50px;
+	color:green;
+	text-align:center;
+	animation-name:appearfromtop;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+}
+h1 a
+{
+	margin-left:100px;
+}
+.container
+{
+	margin-top:100px;
+}
+.profile img
+{
+	border-radius:50%;
+	float:left;
+	margin:0 20px;
+}
+.anime
+{
+	animation-name:appearfromleft;
+	animation-delay:1s;
+	animation-duration:1s;
+	animation-fill-mode: both;
+}
+.gallery
+{
+	clear:left;
+	margin:auto;
+	width:50%;
+	animation-name:appearfrombottom;
+	animation-delay:3s;
+	animation-duration:1s;
+	animation-fill-mode: both;
+	animation-direction:reverse;
+}	
+.icons
+{
+	margin:auto;
+	float:left;
+	transition: transform 1s;
+}
+.icons:hover
+{
+	transform:scale(1.2,1.2);
+}
+.icons div
+{
+	text-align:center;
+	color:yellow;
+	font-family:'Comic Neue',cursive;
+}
