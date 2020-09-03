@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang>
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ludo Game</title>
+	<link rel="stylesheet" href="ludo_game.css">
+</head>
+<body>
+	<div class="container">
+		<div class="lockerA"><h3>Locker for A</h3><h1 style="color:red;font-size:50px">OO</h1></div>
+		<div class="boxes">
+			<div class="flexbox f1">
+				<div class="box b1" style="background-color:rgba(255,0,0,0.3)"></div>
+				<div class="box b2" style="background-color:rgba(255,0,0,0.3)"></div>
+				<div class="box b3" style="background-color:rgba(255,0,0,0.3)"></div>
+				<div class="box b4" style="background-color:rgba(255,0,0,0.3)"></div>
+				<div class="box b5" style="background-color:rgba(255,0,0,0.3)"></div>
+				<div class="box b6" style="background-color:rgba(255,0,0,0.3)"></div>
+				<div class="box b7" style="background-color:rgba(255,0,0,0.3)"></div>
+				<div class="box b8" style="background-color:rgba(255,0,0,0.3)"></div>
+			</div>
+			<div class="flexbox f2">
+				<div class="box b28" style="background-color:salmon"></div>
+				<div class="box b27" style="background-color:rgba(255,0,0,0.3)"></div>
+				<div class="box b26" style="background-color:rgba(255,0,0,0.3)"></div>
+				<div class="box b25" style="background-color:rgba(255,0,0,0.3)"></div>
+				<div class="box b24" style="background-color:rgba(255,0,0,0.3)"></div>
+				<div class="box b23" style="background-color:rgba(255,0,0,0.3)"></div>
+			</div>
+			<div class="flexbox f3">
+				<div class="box b9" style="background-color:rgba(0,0,255,0.3)"></div>
+				<div class="box b10" style="background-color:rgba(0,0,255,0.3)"></div>
+				<div class="box b11" style="background-color:rgba(0,0,255,0.3)"></div>
+				<div class="box b12" style="background-color:rgba(0,0,255,0.3)"></div>
+				<div class="box b13" style="background-color:rgba(0,0,255,0.3)"></div>
+				<div class="box b14" style="background-color:lightsteelblue"></div>
+			</div>
+			<div class="flexbox f4">
+				<div class="box b22" style="background-color:rgba(0,0,255,0.3)"></div>
+				<div class="box b21" style="background-color:rgba(0,0,255,0.3)"></div>
+				<div class="box b20" style="background-color:rgba(0,0,255,0.3)"></div>
+				<div class="box b19" style="background-color:rgba(0,0,255,0.3)"></div>
+				<div class="box b18" style="background-color:rgba(0,0,255,0.3)"></div>
+				<div class="box b17" style="background-color:rgba(0,0,255,0.3)"></div>
+				<div class="box b16" style="background-color:rgba(0,0,255,0.3)"></div>
+				<div class="box b15" style="background-color:rgba(0,0,255,0.3)"></div>
+			</div>
+		</div>
+		<div class="lockerB"><h3>Locker for B</h3><h1 style="color:blue;font-size:50px">OO</h1></div>
+		<p>Enter a number:<input type="number" id="number" min="1" max="6"><button>Submit</button></p>
+		<div class="dice" style="color:indigo">
+			<div id="turn" style="font-size:20px;font-weight:bold;text-align:center">TURN:Player A</div>
+			<div class="roll" style="cursor:pointer;font-size:20px;text-align:center"><strong>ROLL!</strong></div>
+			<div class="number" style="text-align:center;font-weight:bold;font-size:20px"></div>
+		</div>
+		<div id="awon" class="won">A WON!!!</div>
+		<div id="bwon" class="won">B WON!!!</div>
+	</div>
+	<script src="jquery-3.5.1.js"></script>
+	<script src="ludo_game.js"></script>
+</body>
+</html>
