@@ -1,0 +1,571 @@
+*
+{
+	box-sizing:border-box;
+}
+body,html
+{
+	height:100%;
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+	font-family:'Varela Round',sans-serif;
+}
+.navbar
+{
+	width:100%;
+	margin:0 auto;
+	padding-top:0 200px;
+	height:10%;
+	position:relative;
+}
+.navbar>ul
+{
+	width:100%;
+	margin:0 auto;
+	position:relative;
+	top:20px;
+	list-style-type:none;
+}
+.navbar li
+{
+	float:right;
+	display:inline-block;
+}
+.navbar a
+{
+	display:inline-block;
+	text-decoration:none;
+	color:#7b8b8e;
+	margin-right:50px;
+	font-size:16px;
+	font-weight:700;
+	transition:color .5s ease;
+}
+.navbar a:hover
+{
+	color:#4b5658;
+}
+.container
+{
+	height:90vh;`
+	width:100%;
+	margin:0 auto;
+    background-image:linear-gradient(to bottom, rgba(48,56,83,0) 40%, #303853 60%, #303853 100%),url(https://static.teamtreehouse.com/assets/views/marketing/home/homepage-hero-86e988fc10618a6d2b743327d67eeca3b0396f9720d94c35bbff8cd217de96d1.jpg);
+	background-position-x: 100%, 100%;
+    background-position-y: 0px, -200px;
+    background-size:cover;
+	background-attachment:fixed,fixed;
+	background-color:#303853;
+	position:relative;
+	background-repeat:no-repeat;
+}
+.info1
+{
+	position:absolute;
+	top:200px;
+	left:10%;
+	width:40%;
+	color:white;
+	font-size:35px;
+	font-weight:700;
+}
+.info2
+{
+	position:absolute;
+	top:325px;
+	left:10%;
+	width:40%;
+	color:white;
+	font-size:30px;
+}
+.form
+{
+	position:absolute;
+	width:40%;
+	height:auto;
+	top:80px;
+	right:10%;
+	background-color:white;
+	border-radius:5px;
+}
+.form p
+{
+	text-align:center;
+	font-size:16px;
+	padding:20px;
+	margin:0;
+	color:#40484a;
+	border-radius:5px;
+	background-color:#edeff0;
+}
+form
+{
+	padding:20px;
+}
+label
+{
+	width:48%;
+	display:inline-block;
+	color:#40484a;
+	text-align:left;
+	margin-bottom:.5rem;
+	line-height:1.3;
+}
+input
+{
+	width:48%;
+	background-color: #f9fafa;
+	border:2px solid #d4d9dd;
+	border-radius:4px;
+	color:#40484a;
+	padding:.75rem 1rem;
+	margin-top:.5rem;
+	margin-bottom:20px;
+	transition:border-color .5s ease;
+}
+input:hover
+{
+	border-color:#8c9aa6;
+}
+.check
+{
+	display:block;
+	position:relative;
+	padding-left:25px;
+	border-bottom:0.5px solid #ddd;
+	cursor:pointer;
+	font-size:14px;
+}
+.tick
+{
+	visibility:hidden;
+}
+.checkbox
+{
+	position:absolute;
+	top:0;
+	left:0;
+	height:16px;
+	width:16px;
+	border:2px solid #d4d9dd;
+	border-radius:4px;
+}
+.check:hover input ~ .checkbox
+{
+	border-color:#8c9aa6;
+}
+.check input:checked ~ .checkbox
+{
+	border-color:#387bab;
+	background-color:#387bab;
+}
+.checkbox:after
+{
+	content: "";
+    position: absolute;
+    display: none;
+}
+.check input:checked ~ .checkbox:after
+{
+	display:block;
+}
+.check .checkbox:after
+{
+    left:3px;
+    bottom:2px;
+    width: 5px; 
+    height: 10px; 
+    border: solid white; 
+    border-width: 0 2px 2px 0;
+    transform:rotate(45deg);
+}
+button
+{
+	margin-top:15px;
+	width:100%;
+	vertical-align: middle;
+	background-color:#387bab;
+	height:52px;
+	line-height:48px;
+	padding:0 32px;
+	font-size:16px;
+	border:2px solid #387bab;
+	border-radius:4px;
+	cursor:pointer;
+	color:white;
+	font-weight:700;
+	text-align:center;
+	transition:background-color .5s ease,border .5s ease;
+}
+button:hover
+{
+	background-color:#2a5d81;
+	border:2px solid #2a5d81;
+}
+button div
+{
+	display:inline-block;
+}
+.triangle-right 
+{
+	margin-left:20px;
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-left: 10px solid white;
+	border-bottom: 5px solid transparent;
+}
+.bottom
+{
+	position:absolute;
+	width:100%;
+	bottom:4%;
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    padding:0 15px;
+	color:white;
+}
+.bottom div
+{
+	display:inline-block;
+	margin-left:1.5rem;
+	margin-right:1.5rem;
+}
+.bottom span:nth-child(odd)
+{
+	font-size:2.25rem;
+}
+.bottom span:nth-child(even)
+{
+	font-size:1.125rem;
+}
+.content
+{
+	position:relative;
+    padding:2rem 6rem;
+    height:160vh;
+    background:#303853 url(https://static.teamtreehouse.com/assets/views/marketing/home/homepage-texture-34e7c496750ff276b021f3b2b83238c3177c2c30564885d11d181c4e795a844b.png) top/contain no-repeat;
+    background-color:#f9fafa;
+}
+.flexible
+{
+	border-bottom:1px solid #d4d9dd;
+	width:100%;
+	height:70vh;
+	margin:0 auto;
+}
+video
+{
+	float:left;
+	width:60%;
+}
+.flexible div
+{
+	position:absolute;
+	top:50px;
+	left:60%;
+	width:40%;
+	color:#7b8b8e;
+	font-size:1rem;
+	line-height:1.8;
+}
+.flexible svg
+{
+	position:absolute;
+	top:308px;
+	left:55%;
+}
+.info div
+{
+	float:left;
+	width:50%;
+	margin:0 auto;
+	padding:50px;
+	color:#7b8b8e;
+	font-size:1rem;
+	line-height:1.8;
+}
+.info svg,.info img
+{
+	padding-top:50px;
+	width:389px;
+}
+.partners
+{
+	clear:left;
+	margin-bottom:10rem;
+	text-align:center;
+	font-size:2.25rem;
+	color:#384047;
+	margin-top:10rem;
+	font-weight:normal;
+}
+.four
+{
+	width:100%;
+	display:flex;
+	justify-content: center;
+	flex-wrap:wrap;
+	padding:0 20px;
+}
+.four div
+{
+	float:left;
+	max-width:300px;
+	padding:0rem 1.5rem;
+	margin:0 auto;
+}
+.learnmore
+{
+	background:url(https://static.teamtreehouse.com/assets/views/marketing/home/100-days-of-code-bg-6a72c1d4f2463649cb391a19550e64547823af2849917fa640d3e515900175d3.jpg) center/cover no-repeat;
+    padding-top:5rem;
+    padding-bottom:5rem;
+    text-align:center;
+    color:white;
+}
+.learnmore h3
+{
+	font-size:2.25rem;
+    margin:15px 0;
+}
+.learnmore
+{
+	font-size:1.25rem;
+	line-height:1.6;
+	margin-top:10px;
+	margin-bottom:20px;
+	font-weight:400;
+}
+.learnmore a
+{
+	border-radius:4px;
+	display:inline-block;
+	position:relative;
+	text-decoration:none;
+	border:2px solid #5fcf80;
+	background-color:#5fcf80;
+	color:white;
+	font-weight:500;
+	font-size:16px;
+	height:52px;
+	line-height:48px;
+	padding:0 32px;
+	transition:background-color .5s ease,border-color .5s ease;
+}
+.learnmore a:hover
+{
+	background-color:#34ad58;
+	border-color:#34ad58;
+}
+.footer
+{
+	padding:5rem;
+	width:100%;
+	margin:0 auto;
+	margin-bottom:10%;
+}
+.col
+{
+	float:left;
+	padding:0 15px;
+}
+.a svg
+{
+	fill:#5fcf80;
+	width:140px;
+	height:30px;
+}
+.a
+{
+	width:30%;
+}
+.b
+{
+	width:20%;
+}
+.c
+{
+	width:25%;
+}
+.d
+{
+	width:25%;
+}
+.b ul,.c ul,.d ul
+{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+.b li,.c li
+{
+	height:25px;
+}
+.b a,.c a
+{
+	color:#7b8b8e;
+	text-decoration:none;
+}
+.d ul
+{
+	float:left;
+}
+.d li
+{
+	margin-right:4px;
+	float:left;
+	display:inline;
+}
+.d a
+{
+	background-color:#2d3339;
+	width:26px;
+	height:26px;
+	border-radius:26px;
+	display:inline-block;
+	transition:background-color.5s ease;
+}
+.d a:visited,.d a:hover
+{
+	background-color:#5fcf80;
+}
+@media screen and (max-width:960px)
+{
+	.container
+	{
+		padding:0 15px;
+		height:120vh;
+	}
+    .info1
+	{
+		top:5%;
+		left:5%;
+		width:100%;
+	}	
+	.info2
+	{
+		top:20%;
+		left:5%;
+		width:100%;
+	}
+	.form
+	{
+		width:80%;
+		top:30%;
+	}
+	video
+	{
+		float:left;
+		width:100%;
+	}
+	.flexible div
+	{
+		position:absolute;
+	    top:500px;
+	    left:10%;
+	    width:90%;
+	    padding-bottom:10px;
+	    border-bottom:1px solid #d4d9dd;
+	}
+	.flexible svg
+	{
+		display:none;
+	}
+	.info
+	{
+		position:relative;
+		top:15%;
+	}
+	.info div
+	{
+		float:left;
+		width:100%;
+		margin:0 auto;
+		padding:20px;
+	}
+	.info img, .info svg
+	{
+		padding-top:15px;
+		width:60vw;
+	}
+	.partners
+	{
+		position:relative;
+		top:20%;
+	}
+	.a,.b,.c,.d
+	{
+		width:100%;
+	}
+	.d ul
+	{
+		float:left;
+	}
+}
+@media screen and (max-width:680px)
+{
+	.navbar
+	{
+		height:20%;
+	}
+	.container
+	{
+		padding:0 15px;
+		height:160vh;
+	}
+	.info1
+	{
+		top:5%;
+		left:2%;
+		width:100%;
+	}
+	.info2
+	{
+		top:22%;
+		left:2%;
+		width:100%;
+	}
+	.form
+	{
+		width:80%;
+		top:32%;
+	}
+	.triangle-right
+	{
+		display:none;
+	}
+	video
+	{
+		float:left;
+		width:100%;
+	}
+	.info
+	{
+		position:relative;
+		top:21%;
+	}
+	.footer
+	{
+		margin:0;
+		padding:50px;
+	}
+	.valuable p
+	{
+		margin-bottom:0;
+	}
+	.info img, .info svg
+	{
+		padding-top:0;
+	}
+	.partners
+	{
+		position:relative;
+		top:23%;
+	}
+	.learnmore
+	{
+		position:relative;
+		top:10%;
+	}
+}
